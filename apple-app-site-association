@@ -1,5 +1,17 @@
 {
+  "applinks": {
+    "apps": [],
+    "details": [
+    {
+      "appID":"X25KZ54NYC.com.yochidros.fruta",
+      "paths":[ "*" ]
+    }
+    ]
+  },
   "appclips": {
     "apps": ["X25KZ54NYC.com.yochidros.fruta.Clip"]
-  }
+  },
+  "webcredentials": {
+    "apps": ["X25KZ54NYC.com.yochidros.fruta"]
+   }
 }
