@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
     {
-      "appID":"X25KZ54NYC.com.yochidros.fruta",
+      "appID":"X25KZ54NYC.com.yochidros.TwemojiPreview",
       "paths":[ "*" ]
     }
     ]
@@ -12,6 +12,6 @@
     "apps": ["X25KZ54NYC.com.yochidros.TwemojiPreview.Clip"]
   },
   "webcredentials": {
-    "apps": ["X25KZ54NYC.com.yochidros.fruta"]
+    "apps": ["X25KZ54NYC.com.yochidros.TwemojiPreview"]
    }
 }
