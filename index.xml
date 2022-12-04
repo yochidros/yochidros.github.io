@@ -1,15 +1,50 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>よちどろ備忘録</title>
-        <link>https://yochidros.github.io/</link>
-        <description>About yochidros</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>mm9.movement.trb@gmail.com (yochidros)</managingEditor>
-            <webMaster>mm9.movement.trb@gmail.com (yochidros)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 05 May 2020 19:26:48 &#43;0900</lastBuildDate><atom:link href="https://yochidros.github.io/" rel="self" type="application/rss+xml" /><item>
-    <title>マイページを開設</title>
-    <link>https://yochidros.github.io/intorduce/</link>
-    <pubDate>Mon, 25 May 2020 18:06:00 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>https://yochidros.github.io/intorduce/</guid>
-    <description><![CDATA[マイページを開設しました！ 何かあればここに書いていこうと思います！]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YochidrosKit</title>
+    <link>http://yochidros.github.io/</link>
+    <description>Recent content on YochidrosKit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© yochidros</copyright>
+    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="http://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SwiftUIについて書きました</title>
+      <link>http://yochidros.github.io/posts/introduce-swiftui/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>http://yochidros.github.io/posts/introduce-swiftui/</guid>
+      <description>2021 dely advent calenderでSwiftUIについて書きました。
+https://tech.dely.jp/entry/2021/12/10/103220</description>
+    </item>
+    
+    <item>
+      <title>KMM触ってみた</title>
+      <link>http://yochidros.github.io/posts/2020-12-kmm/</link>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://yochidros.github.io/posts/2020-12-kmm/</guid>
+      <description>2020 dely advent calenderでKMMについて書きました。
+https://tech.dely.jp/entry/2020/12/11/000000</description>
+    </item>
+    
+    <item>
+      <title>マイページを開設</title>
+      <link>http://yochidros.github.io/posts/introduce/</link>
+      <pubDate>Mon, 25 May 2020 18:06:00 +0900</pubDate>
+      
+      <guid>http://yochidros.github.io/posts/introduce/</guid>
+      <description>マイページを開設しました！ 何かあればここに書いていこうと思います！ </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://yochidros.github.io/about/</link>
+      <pubDate>Tue, 05 May 2020 19:26:48 +0900</pubDate>
+      
+      <guid>http://yochidros.github.io/about/</guid>
+      <description>Me 2014-04 - 2018-03 会津大学コンピュータ理工学科 2017-12 - 2019-08 株式会社Nagisa(iOSエンジニア) 2019-09 - 2020-03 株式会社Tribe(エンジニア) 2020-04 - dely株式会社(iOSエンジニア) Social github twitter Activities TwemojiKit link Skils iOS, Swift, SwiftUI Android, Kotlin Ruby, Ruby on Rails Vue, Typescript Go Hobby python3 Rust Interest Kotlin multi platform(KMM) JetpackCompose Haskell Network Architect </description>
+    </item>
+    
+  </channel>
 </rss>
