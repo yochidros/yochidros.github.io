@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on YochidrosKit</title>
-    <link>http://yochidros.github.io/posts/</link>
+    <link>https://yochidros.github.io/posts/</link>
     <description>Recent content in Posts on YochidrosKit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="http://yochidros.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwiftUIについて書きました</title>
-      <link>http://yochidros.github.io/posts/introduce-swiftui/</link>
+      <link>https://yochidros.github.io/posts/introduce-swiftui/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>http://yochidros.github.io/posts/introduce-swiftui/</guid>
+      <guid>https://yochidros.github.io/posts/introduce-swiftui/</guid>
       <description>2021 dely advent calenderでSwiftUIについて書きました。
 https://tech.dely.jp/entry/2021/12/10/103220</description>
     </item>
     
     <item>
       <title>KMM触ってみた</title>
-      <link>http://yochidros.github.io/posts/2020-12-kmm/</link>
+      <link>https://yochidros.github.io/posts/2020-12-kmm/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://yochidros.github.io/posts/2020-12-kmm/</guid>
+      <guid>https://yochidros.github.io/posts/2020-12-kmm/</guid>
       <description>2020 dely advent calenderでKMMについて書きました。
 https://tech.dely.jp/entry/2020/12/11/000000</description>
     </item>
     
     <item>
       <title>マイページを開設</title>
-      <link>http://yochidros.github.io/posts/introduce/</link>
+      <link>https://yochidros.github.io/posts/introduce/</link>
       <pubDate>Mon, 25 May 2020 18:06:00 +0900</pubDate>
       
-      <guid>http://yochidros.github.io/posts/introduce/</guid>
+      <guid>https://yochidros.github.io/posts/introduce/</guid>
       <description>マイページを開設しました！ 何かあればここに書いていこうと思います！ </description>
     </item>
     
