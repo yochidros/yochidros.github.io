@@ -57,6 +57,18 @@
 				
 				
 				<section class="list-item">
+					<h1 class="title"><a href="/posts/bat-v1/">Bat V1</a></h1>
+					<time>Dec 18, 2022</time>
+					<br><div class="description">
+	
+	cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
+本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&lt;P: AsRef&lt;Path&gt;&gt;( theme: &amp;Theme, syntax_set: &amp;SyntaxSet, filename: P, line_changes: Option&lt;LineChanges&gt;, ) -&gt; io::Result&lt;()&gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。&hellip;
+	
+</div>
+					<a class="readmore" href="/posts/bat-v1/">Read more ⟶</a>
+				</section>
+				
+				<section class="list-item">
 					<h1 class="title"><a href="/posts/introduce-swiftui/">SwiftUIについて書きました</a></h1>
 					<time>Dec 10, 2021</time>
 					<br><div class="description">

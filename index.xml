@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 13:32:28 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bat V1</title>
+      <link>https://yochidros.github.io/posts/bat-v1/</link>
+      <pubDate>Sun, 18 Dec 2022 13:32:28 +0900</pubDate>
+      
+      <guid>https://yochidros.github.io/posts/bat-v1/</guid>
+      <description>cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
+本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&amp;lt;P: AsRef&amp;lt;Path&amp;gt;&amp;gt;( theme: &amp;amp;Theme, syntax_set: &amp;amp;SyntaxSet, filename: P, line_changes: Option&amp;lt;LineChanges&amp;gt;, ) -&amp;gt; io::Result&amp;lt;()&amp;gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。</description>
+    </item>
+    
     <item>
       <title>SwiftUIについて書きました</title>
       <link>https://yochidros.github.io/posts/introduce-swiftui/</link>

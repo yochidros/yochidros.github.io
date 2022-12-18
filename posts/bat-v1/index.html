@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Bat V1 - DogKit</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
+本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&lt;P: AsRef&lt;Path&gt;&gt;( theme: &amp;Theme, syntax_set: &amp;SyntaxSet, filename: P, line_changes: Option&lt;LineChanges&gt;, ) -&gt; io::Result&lt;()&gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。" />
+	<meta property="og:image" content="[ogp.png]"/>
+	<meta property="og:title" content="Bat V1" />
+<meta property="og:description" content="cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
+本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&lt;P: AsRef&lt;Path&gt;&gt;( theme: &amp;Theme, syntax_set: &amp;SyntaxSet, filename: P, line_changes: Option&lt;LineChanges&gt;, ) -&gt; io::Result&lt;()&gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yochidros.github.io/posts/bat-v1/" /><meta property="og:image" content="https://yochidros.github.io/ogp.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-18T13:32:28+09:00" />
+<meta property="article:modified_time" content="2022-12-18T13:32:28+09:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yochidros.github.io/ogp.png"/>
+
+<meta name="twitter:title" content="Bat V1"/>
+<meta name="twitter:description" content="cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
+本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&lt;P: AsRef&lt;Path&gt;&gt;( theme: &amp;Theme, syntax_set: &amp;SyntaxSet, filename: P, line_changes: Option&lt;LineChanges&gt;, ) -&gt; io::Result&lt;()&gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。"/>
+<script src="https://yochidros.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://yochidros.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://yochidros.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://yochidros.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://yochidros.github.io/">DogKit</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">Posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Bat V1</h1>
+			<div class="meta">Posted on Dec 18, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p>cat のrust版。
+argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。
+初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。</p>
+<ul>
+<li>本家: <a href="https://github.com/sharkdp/bat/releases/tag/v0.1.0">Release v0.1.0 · sharkdp/bat · GitHub</a></li>
+<li>写経版: <a href="https://github.com/yochidros/bat-v1">GitHub - yochidros/bat-v1</a></li>
+</ul>
+<h2 id="v1">v1</h2>
+<ul>
+<li>2018/04/22にリリース</li>
+<li>引数に複数ファイルを指定可能</li>
+<li>指定したファイルごとにgitの差分を算出 (<a href="https://github.com/rust-lang/git2-rs">GitHub - rust-lang/git2-rs: libgit2 bindings for Rust</a>)</li>
+<li>算出された結果とファイルを元に標準出力に表示する</li>
+<li><code>LineChanges</code> 自体は行数と<code>Enum LineChange</code>のhashmapで自前で用意している。</li>
+<li>カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。</li>
+<li><a href="https://github.com/trishume/syntect">GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.</a>tライブラリを利用して構文にハイライトをつけさせている。(１行ごと)</li>
+<li><a href="https://github.com/ogham/rust-ansi-term">GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)</a>で色付け</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">print_file</span><span style="color:#f92672">&lt;</span>P: AsRef<span style="color:#f92672">&lt;</span>Path<span style="color:#f92672">&gt;&gt;</span>(
+</span></span><span style="display:flex;"><span>	theme: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Theme</span>,
+</span></span><span style="display:flex;"><span>	syntax_set: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">SyntaxSet</span>,
+</span></span><span style="display:flex;"><span>	filename: <span style="color:#a6e22e">P</span>,
+</span></span><span style="display:flex;"><span>	line_changes: Option<span style="color:#f92672">&lt;</span>LineChanges<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>) -&gt; <span style="color:#a6e22e">io</span>::Result<span style="color:#f92672">&lt;</span>()<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>がメインロジック。<code>run</code>
+theme, syntax_set, filenameがファイル内容の出力に必要。
+line_changesはgitの差分情報がある。</p>
+<h2 id="感想">感想</h2>
+<p>すごくシンプル.
+2022/12時点でのライブラリを利用しており、初版が2018年だったのでそこのマイグレーションが少し手こずった。
+main.rsに全て記述してあるので適切にファイル分割はしたいと思った。
+v2ではTrueColorに対応したのでそれもやってみようかな。</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/yochidros" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://twitter.com/yochidros" rel="me" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2022  © yochidros |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NB866KJ4NJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NB866KJ4NJ');
+</script><script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
