@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<head lang="en">
+	<head>
+	<meta name="generator" content="Hugo 0.124.1">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>YochidrosKit | Home </title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
@@ -22,12 +23,6 @@
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="https://yochidros.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://yochidros.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
-	
-
-	
-	
-
-	
 	
 	
 	
@@ -60,6 +55,28 @@
 				
 				
 				<section class="list-item">
+					<h1 class="title"><a href="/posts/gleam-begin/">Gleam 触ってみる</a></h1>
+					<time>Mar 29, 2024</time>
+					<br><div class="description">
+	
+	2024年03月29日 22:07:11 JST gleamというプログラミング言語が1.0.0をリリースしたことを知り、興味がわいたので触ってみる。 型システムがあり、Elm,OCaml,Rustなどの型システムからインスピレーションを得ている. Erlang上で動作したり、javascriptのランタイムでも動作できるらしい。
+何もわからない人はまずplaygroundがあるのでそれを触ってみる
+https://tour.gleam.run/
+まずはインストール。
+brew install gleam miseを使っているならコミュニティのプラグインあるのでそれを利用できる
+https://github.com/vic/asdf-gleam.git
+mise install gleam 2024年03月29日 22:21:17 JST https://gleam.run/writing-gleam/
+書いてみよう。
+projectの作成はcargoと似ている
+gleam new vars LSPがあるので設定する
+nvimはnvim-lspconfigで設定できる。
+nvim_lsp.gleam.setup({ capabilities = capabilities, }) formatterも備えているので設定する。 ただ普段none-lsを利用しており、none-ls自体にプラグインがないので一旦個別で対応する。
+if #clients &gt; 0 and contains({ &#34;gleam&#34; }, clients[1].name) then local augroup = vim.api.nvim_create_augroup(&#34;LspFormatting&#34;, {}) vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr }) vim.api.nvim_create_autocmd(&#34;BufWritePre&#34;, { group = augroup, buffer = bufnr, callback = function() vim.lsp.buf.format({ async = false, }) require(&#34;fidget&#34;).&hellip;
+	
+</div>
+				</section>
+				
+				<section class="list-item">
 					<h1 class="title"><a href="/posts/introduce-swiftui/">SwiftUIについて書きました</a></h1>
 					<time>Dec 10, 2021</time>
 					<br><div class="description">
@@ -68,7 +85,6 @@
 https://tech.dely.jp/entry/2021/12/10/103220&hellip;
 	
 </div>
-					<a class="readmore" href="/posts/introduce-swiftui/">Read more ⟶</a>
 				</section>
 				
 				<section class="list-item">
@@ -80,7 +96,6 @@ https://tech.dely.jp/entry/2021/12/10/103220&hellip;
 https://tech.dely.jp/entry/2020/12/11/000000&hellip;
 	
 </div>
-					<a class="readmore" href="/posts/2020-12-kmm/">Read more ⟶</a>
 				</section>
 				
 				<section class="list-item">
@@ -91,7 +106,6 @@ https://tech.dely.jp/entry/2020/12/11/000000&hellip;
 	マイページを開設しました！ 何かあればここに書いていこうと思います！ &hellip;
 	
 </div>
-					<a class="readmore" href="/posts/introduce/">Read more ⟶</a>
 				</section>
 				
 				
@@ -99,35 +113,25 @@ https://tech.dely.jp/entry/2020/12/11/000000&hellip;
 
 			</main>
 			<footer>
-  <div style="display: flex"><a class="soc" href="https://github.com/yochidros" rel="me" title="GitHub"
-      ><i data-feather="github"></i
-    ></a>
-    <a class="border"></a><a class="soc" href="https://x.com/yochidros" rel="me" title="Twitter"
-      ><i data-feather="twitter"></i
-    ></a>
+  <div style="display:flex"><a class="soc" href="https://github.com/yochidros" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://x.com/yochidros" rel="me" title="X"><i data-feather="twitter"></i></a>
     <a class="border"></a></div>
   <div class="footer-info">
-    2024  © yochidros | 
-    <a href="https://github.com/athul/archie">Archie Theme</a> | Built with
-    <a href="https://gohugo.io">Hugo</a>
+    2024  © yochidros |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
 
 
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-NB866KJ4NJ"
-></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NB866KJ4NJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  gtag("config", "G-NB866KJ4NJ");
+  gtag('config', 'G-NB866KJ4NJ');
 </script><script>
-  feather.replace();
+  feather.replace()
 </script>
 		</div>
 		
