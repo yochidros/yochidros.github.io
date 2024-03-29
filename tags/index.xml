@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2024 21:36:37 +0900</lastBuildDate>
     <atom:link href="https://yochidros.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gleam</title>
+      <link>https://yochidros.github.io/tags/gleam/</link>
+      <pubDate>Fri, 29 Mar 2024 21:36:37 +0900</pubDate>
+      <guid>https://yochidros.github.io/tags/gleam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neovim</title>
+      <link>https://yochidros.github.io/tags/neovim/</link>
+      <pubDate>Fri, 29 Mar 2024 21:36:37 +0900</pubDate>
+      <guid>https://yochidros.github.io/tags/neovim/</guid>
+      <description></description>
+    </item>
     <item>
       <title>SwiftUI</title>
       <link>https://yochidros.github.io/tags/swiftui/</link>
