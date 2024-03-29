@@ -1,61 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DogKit</title>
+    <title>YochidrosKit</title>
     <link>https://yochidros.github.io/</link>
-    <description>Recent content on DogKit</description>
+    <description>Recent content on YochidrosKit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Sun, 18 Dec 2022 13:32:28 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bat V1</title>
-      <link>https://yochidros.github.io/posts/bat-v1/</link>
-      <pubDate>Sun, 18 Dec 2022 13:32:28 +0900</pubDate>
-      
-      <guid>https://yochidros.github.io/posts/bat-v1/</guid>
-      <description>cat のrust版。 argumentに指定したファイル名を入力してそれを元にファイルを読み込み標準出力に内容を出力する。 初版がどういう実装なのか気になったので写経しながらコードリーディングしてみたメモ。
-本家: Release v0.1.0 · sharkdp/bat · GitHub 写経版: GitHub - yochidros/bat-v1 v1 2018/04/22にリリース 引数に複数ファイルを指定可能 指定したファイルごとにgitの差分を算出 (GitHub - rust-lang/git2-rs: libgit2 bindings for Rust) 算出された結果とファイルを元に標準出力に表示する LineChanges 自体は行数とEnum LineChangeのhashmapで自前で用意している。 カラーテーマを読み込む（デフォルト Monokai, ファイルパス ~/.config/bat/themes) あらかじめファイルを置いておく必要がある。 GitHub - trishume/syntect: Rust library for syntax highlighting using Sublime Text syntax definitions.tライブラリを利用して構文にハイライトをつけさせている。(１行ごと) GitHub - ogham/rust-ansi-term: Rust library for ANSI terminal colours and styles (bold, underline)で色付け fn print_file&amp;lt;P: AsRef&amp;lt;Path&amp;gt;&amp;gt;( theme: &amp;amp;Theme, syntax_set: &amp;amp;SyntaxSet, filename: P, line_changes: Option&amp;lt;LineChanges&amp;gt;, ) -&amp;gt; io::Result&amp;lt;()&amp;gt; がメインロジック。run theme, syntax_set, filenameがファイル内容の出力に必要。 line_changesはgitの差分情報がある。</description>
+      <title>About</title>
+      <link>https://yochidros.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0900</pubDate>
+      <guid>https://yochidros.github.io/about/</guid>
+      <description>&#xA;Me 2014-04 - 2018-03 会津大学コンピュータ理工学科 2017-12 - 2019-08 株式会社Nagisa(ソフトウェアエンジニア: iOS, Android, Typesciprt, Vue.js2) 2019-09 - 2020-03 株式会社Tribe(ソフトウェアエンジニア: iOS, Android, Go, Typescript) 2020-04 - 2023-12 dely株式会社(ソフトウェアエンジニア: iOS, Android, RubyOnRails) 2024-01 - 株式会社bitkey(ソフトウェアエンジニア: iOS, Android, Typescript) Social github twitter Activities TwemojiKit link gen-thumbnail link Skils iOS, Swift, SwiftUI Android, Kotlin Ruby, Ruby on Rails Vue, React, Typescript Go Hobby Python Rust Interest JetpackCompose gleam Haskell Functional Programming </description>
     </item>
-    
     <item>
       <title>SwiftUIについて書きました</title>
       <link>https://yochidros.github.io/posts/introduce-swiftui/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/posts/introduce-swiftui/</guid>
-      <description>2021 dely advent calenderでSwiftUIについて書きました。
-https://tech.dely.jp/entry/2021/12/10/103220</description>
+      <description>2021 dely advent calenderでSwiftUIについて書きました。&#xA;https://tech.dely.jp/entry/2021/12/10/103220</description>
     </item>
-    
     <item>
       <title>KMM触ってみた</title>
       <link>https://yochidros.github.io/posts/2020-12-kmm/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/posts/2020-12-kmm/</guid>
-      <description>2020 dely advent calenderでKMMについて書きました。
-https://tech.dely.jp/entry/2020/12/11/000000</description>
+      <description>2020 dely advent calenderでKMMについて書きました。&#xA;https://tech.dely.jp/entry/2020/12/11/000000</description>
     </item>
-    
     <item>
       <title>マイページを開設</title>
       <link>https://yochidros.github.io/posts/introduce/</link>
       <pubDate>Mon, 25 May 2020 18:06:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/posts/introduce/</guid>
       <description>マイページを開設しました！ 何かあればここに書いていこうと思います！ </description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://yochidros.github.io/about/</link>
-      <pubDate>Tue, 05 May 2020 19:26:48 +0900</pubDate>
-      
-      <guid>https://yochidros.github.io/about/</guid>
-      <description>
-Me 2014-04 - 2018-03 会津大学コンピュータ理工学科 2017-12 - 2019-08 株式会社Nagisa(iOSエンジニア) 2019-09 - 2020-03 株式会社Tribe(エンジニア) 2020-04 - dely株式会社(iOSエンジニア) Social github twitter Activities TwemojiKit link gen-thumbnail link Skils iOS, Swift, SwiftUI (Dev from 2017) Android, Kotlin (Dev from 2019) Ruby, Ruby on Rails (Dev from 2022) Vue, Typescript (Dev from 2020) Go (Dev from 2021) Hobby python3 (from 2016) Rust (from 2018) Interest Kotlin multi platform(KMM) JetpackCompose Haskell Network Architect </description>
-    </item>
-    
   </channel>
 </rss>

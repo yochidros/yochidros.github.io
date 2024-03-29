@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on DogKit</title>
+    <title>Tags on YochidrosKit</title>
     <link>https://yochidros.github.io/tags/</link>
-    <description>Recent content in Tags on DogKit</description>
+    <description>Recent content in Tags on YochidrosKit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Sun, 18 Dec 2022 13:32:28 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rust</title>
-      <link>https://yochidros.github.io/tags/rust/</link>
-      <pubDate>Sun, 18 Dec 2022 13:32:28 +0900</pubDate>
-      
-      <guid>https://yochidros.github.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yochidros.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwiftUI</title>
       <link>https://yochidros.github.io/tags/swiftui/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/tags/swiftui/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>KMM</title>
       <link>https://yochidros.github.io/tags/kmm/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/tags/kmm/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

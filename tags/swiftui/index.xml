@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SwiftUI on DogKit</title>
+    <title>SwiftUI on YochidrosKit</title>
     <link>https://yochidros.github.io/tags/swiftui/</link>
-    <description>Recent content in SwiftUI on DogKit</description>
+    <description>Recent content in SwiftUI on YochidrosKit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yochidros.github.io/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://yochidros.github.io/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SwiftUIについて書きました</title>
       <link>https://yochidros.github.io/posts/introduce-swiftui/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
-      
       <guid>https://yochidros.github.io/posts/introduce-swiftui/</guid>
-      <description>2021 dely advent calenderでSwiftUIについて書きました。
-https://tech.dely.jp/entry/2021/12/10/103220</description>
+      <description>2021 dely advent calenderでSwiftUIについて書きました。&#xA;https://tech.dely.jp/entry/2021/12/10/103220</description>
     </item>
-    
   </channel>
 </rss>
