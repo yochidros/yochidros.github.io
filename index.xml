@@ -14,7 +14,7 @@
       <link>https://yochidros.github.io/posts/gleam-begin/</link>
       <pubDate>Fri, 29 Mar 2024 21:36:37 +0900</pubDate>
       <guid>https://yochidros.github.io/posts/gleam-begin/</guid>
-      <description>2024年03月29日 22:07:11 JST gleamというプログラミング言語が1.0.0をリリースしたことを知り、興味がわいたので触ってみる。 型システムがあり、Elm,OCaml,Rustなどの型システムからインスピレーションを得ている. Erlang上で動作したり、javascriptのランタイムでも動作できるらしい。&#xA;何もわからない人はまずplaygroundがあるのでそれを触ってみる&#xA;https://tour.gleam.run/&#xA;まずはインストール。&#xA;brew install gleam miseを使っているならコミュニティのプラグインあるのでそれを利用できる&#xA;https://github.com/vic/asdf-gleam.git&#xA;mise install gleam 2024年03月29日 22:21:17 JST https://gleam.run/writing-gleam/&#xA;書いてみよう。&#xA;projectの作成はcargoと似ている&#xA;gleam new vars LSPがあるので設定する&#xA;nvimはnvim-lspconfigで設定できる。&#xA;nvim_lsp.gleam.setup({ capabilities = capabilities, }) formatterも備えているので設定する。 ただ普段none-lsを利用しており、none-ls自体にプラグインがないので一旦個別で対応する。&#xA;if #clients &amp;gt; 0 and contains({ &amp;#34;gleam&amp;#34; }, clients[1].name) then local augroup = vim.api.nvim_create_augroup(&amp;#34;LspFormatting&amp;#34;, {}) vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr }) vim.api.nvim_create_autocmd(&amp;#34;BufWritePre&amp;#34;, { group = augroup, buffer = bufnr, callback = function() vim.lsp.buf.format({ async = false, }) require(&amp;#34;fidget&amp;#34;).</description>
+      <description>gleamというプログラミング言語が1.0.0をリリースしたことを知り、興味がわいたので触ってみた</description>
     </item>
     <item>
       <title>About</title>
@@ -28,14 +28,14 @@
       <link>https://yochidros.github.io/posts/introduce-swiftui/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0900</pubDate>
       <guid>https://yochidros.github.io/posts/introduce-swiftui/</guid>
-      <description>2021 dely advent calenderでSwiftUIについて書きました。&#xA;https://tech.dely.jp/entry/2021/12/10/103220</description>
+      <description>SwiftUI導入したってよ</description>
     </item>
     <item>
       <title>KMM触ってみた</title>
       <link>https://yochidros.github.io/posts/2020-12-kmm/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0900</pubDate>
       <guid>https://yochidros.github.io/posts/2020-12-kmm/</guid>
-      <description>2020 dely advent calenderでKMMについて書きました。&#xA;https://tech.dely.jp/entry/2020/12/11/000000</description>
+      <description>KMMについて書きました</description>
     </item>
     <item>
       <title>マイページを開設</title>
