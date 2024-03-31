@@ -132,6 +132,34 @@ gleam_dynamicを使えばいけることがいけたのでStringに変換して�
 <h4 id="2024年03月30日-234450-jst">2024年03月30日 23:44:50 JST</h4>
 <p><a href="https://github.com/yochidros/gleam_simple_http_server/commit/2296ef495e56b74ff58bc324ef8c73995faa415d">https://github.com/yochidros/gleam_simple_http_server/commit/2296ef495e56b74ff58bc324ef8c73995faa415d</a></p>
 <p>きれいしたので、次はjson型とかにチャレンジしてみる。</p>
+<hr>
+<h4 id="2024年03月31日-104358-jst">2024年03月31日 10:43:58 JST</h4>
+<p>一応jsonをエンコード・デコードするものはできた。
+todoメソッド生やしてPostだけ受け付けるようにした。</p>
+<p>ただ、一つのメソッド対応だけでもResultのパターンマッチが多いのでうまくPipelineを活用したい、、、</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#fe8019">fn</span> <span style="color:#fabd2f">todo_</span>(ctx: Request(Dynamic)) -&gt; Response(BytesBuilder) {
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">..</span>.
+</span></span><span style="display:flex;"><span>    case ctx.method {
+</span></span><span style="display:flex;"><span>    http.Post -&gt;
+</span></span><span style="display:flex;"><span>      case dynamic.string(ctx.body) {
+</span></span><span style="display:flex;"><span>        <span style="color:#fabd2f">Ok</span>(content) -&gt;
+</span></span><span style="display:flex;"><span>          case decode_create_todo(content) {
+</span></span><span style="display:flex;"><span>            <span style="color:#fabd2f">Ok</span>(t) -&gt;
+</span></span><span style="display:flex;"><span>              response.new(<span style="color:#d3869b">200</span>)
+</span></span><span style="display:flex;"><span>              <span style="color:#fe8019">|&gt;</span> response.set_body(encode_todo(t))
+</span></span><span style="display:flex;"><span>            Error(e) -&gt;
+</span></span><span style="display:flex;"><span>              response.new(<span style="color:#d3869b">500</span>)
+</span></span><span style="display:flex;"><span>              <span style="color:#fe8019">|&gt;</span> utils.set_body(utils.parse_json_string_from(e))
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        Error(errors) -&gt;
+</span></span><span style="display:flex;"><span>          response.new(<span style="color:#d3869b">500</span>)
+</span></span><span style="display:flex;"><span>          <span style="color:#fe8019">|&gt;</span> utils.set_body(utils.parse_string_from(errors))
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#fe8019">..</span>.
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>成果物は下のリンクにおいておく。</p>
+<p><a href="https://github.com/yochidros/gleam_simple_http_server/commit/24cd7edad153002ba8cbc078cb792029fe7dacdd">https://github.com/yochidros/gleam_simple_http_server/commit/24cd7edad153002ba8cbc078cb792029fe7dacdd</a></p>
 
 		</section>
 
