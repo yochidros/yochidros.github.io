@@ -65,7 +65,38 @@
 <p>iosはcocoapods経由で必要なライブラリを導入している。
 spm対応とかできないのか疑問🤔</p>
 <p>appフォルダが<code>(tabs)</code>とかで作成するものはどこにあるのか次調べる。</p>
-
+<h4 id="2024年04月04日-220418-jst">2024年04月04日 22:04:18 JST</h4>
+<blockquote>
+<p>appフォルダが<code>(tabs)</code>とかで作成するものはどこにあるのか次調べる。</p>
+</blockquote>
+<p>DynamicRoutingというものらしい。</p>
+<p><a href="https://docs.expo.dev/router/introduction/">https://docs.expo.dev/router/introduction/</a></p>
+<p>ファイルベースでroutingを管理しているもの。</p>
+<p><code>/home</code>なら以下の構成になる</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>app/
+</span></span><span style="display:flex;"><span> - index.tsx
+</span></span><span style="display:flex;"><span> - home.tsx // or
+</span></span><span style="display:flex;"><span> - home/
+</span></span><span style="display:flex;"><span>     - _index.tsx
+</span></span><span style="display:flex;"><span>     - _layout.tsx (header, footerとかを固定にしたいユースケースなど...)
+</span></span></code></pre></div><p><code>/users/{id}</code>とかの場合は以下になる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>app/
+</span></span><span style="display:flex;"><span> - index.tsx
+</span></span><span style="display:flex;"><span> - users/
+</span></span><span style="display:flex;"><span>     - [id].tsx
+</span></span></code></pre></div><p>知りたかった<code>(tabs)</code>はGroupといってURL上にそのパスを表示させないもの。</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>app/
+</span></span><span style="display:flex;"><span> - index.tsx
+</span></span><span style="display:flex;"><span> - (me)/
+</span></span><span style="display:flex;"><span>     - about.tsx
+</span></span><span style="display:flex;"><span> - (article)/
+</span></span><span style="display:flex;"><span>     - [id].tsx
+</span></span></code></pre></div><p>の場合は以下のroutingになる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>- /                                 =&gt; app/index.tsx
+</span></span><span style="display:flex;"><span>- /about                            =&gt; app/(me)/about.tsx
+</span></span><span style="display:flex;"><span>- /1                                =&gt; app/(article)/[id].tsx
+</span></span><span style="display:flex;"><span>- /baf9a79fd46948d4b91f421b9363372a =&gt; app/(article)/[id].tsx
+</span></span></code></pre></div>
 		</section>
 
 		<div class="post-tags">
