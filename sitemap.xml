@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yochidros.github.io/posts/</loc>
+    <lastmod>2024-04-14T17:59:48+09:00</lastmod>
+  </url><url>
+    <loc>https://yochidros.github.io/posts/rust-nes/</loc>
+    <lastmod>2024-04-14T17:59:48+09:00</lastmod>
+  </url><url>
+    <loc>https://yochidros.github.io/</loc>
+    <lastmod>2024-04-14T17:59:48+09:00</lastmod>
+  </url><url>
     <loc>https://yochidros.github.io/tags/expo/</loc>
     <lastmod>2024-04-03T21:41:15+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/posts/expo-for-beginner/</loc>
-    <lastmod>2024-04-03T21:41:15+09:00</lastmod>
-  </url><url>
-    <loc>https://yochidros.github.io/posts/</loc>
     <lastmod>2024-04-03T21:41:15+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/tags/reactnative/</loc>
@@ -18,9 +24,6 @@
     <lastmod>2024-04-03T21:41:15+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/tags/typescript/</loc>
-    <lastmod>2024-04-03T21:41:15+09:00</lastmod>
-  </url><url>
-    <loc>https://yochidros.github.io/</loc>
     <lastmod>2024-04-03T21:41:15+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/tags/gleam/</loc>
