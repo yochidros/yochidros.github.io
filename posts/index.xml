@@ -4,7 +4,7 @@
     <title>Posts on YochidrosKit</title>
     <link>https://yochidros.github.io/posts/</link>
     <description>Recent content in Posts on YochidrosKit</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
     <lastBuildDate>Sun, 14 Apr 2024 17:59:48 +0900</lastBuildDate>
@@ -49,7 +49,7 @@
       <link>https://yochidros.github.io/posts/introduce/</link>
       <pubDate>Mon, 25 May 2020 18:06:00 +0900</pubDate>
       <guid>https://yochidros.github.io/posts/introduce/</guid>
-      <description>マイページを開設しました！ 何かあればここに書いていこうと思います！ </description>
+      <description>&lt;h1 id=&#34;マイページを開設しました&#34;&gt;マイページを開設しました！&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;何かあればここに書いていこうと思います！&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
