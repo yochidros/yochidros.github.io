@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yochidros.github.io/about/</loc>
+    <lastmod>2025-05-06T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://yochidros.github.io/</loc>
+    <lastmod>2025-05-06T00:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://yochidros.github.io/posts/</loc>
     <lastmod>2024-04-14T17:59:48+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/posts/rust-nes/</loc>
-    <lastmod>2024-04-14T17:59:48+09:00</lastmod>
-  </url><url>
-    <loc>https://yochidros.github.io/</loc>
     <lastmod>2024-04-14T17:59:48+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/tags/expo/</loc>
@@ -34,9 +37,6 @@
   </url><url>
     <loc>https://yochidros.github.io/tags/neovim/</loc>
     <lastmod>2024-03-29T21:36:37+09:00</lastmod>
-  </url><url>
-    <loc>https://yochidros.github.io/about/</loc>
-    <lastmod>2024-01-01T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://yochidros.github.io/tags/swiftui/</loc>
     <lastmod>2021-12-10T00:00:00+09:00</lastmod>

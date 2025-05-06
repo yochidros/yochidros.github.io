@@ -2,16 +2,12 @@
   "applinks": {
     "apps": [],
     "details": [
-    {
-      "appID":"X25KZ54NYC.com.yochidros.TwemojiPreview",
-      "paths":[ "*" ]
-    }
     ]
   },
   "appclips": {
-    "apps": ["X25KZ54NYC.com.yochidros.TwemojiPreview.Clip"]
+    "apps": []
   },
   "webcredentials": {
-    "apps": ["X25KZ54NYC.com.yochidros.TwemojiPreview"]
+    "apps": []
    }
 }

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja-JP</language>
     <copyright>© yochidros</copyright>
-    <lastBuildDate>Sun, 14 Apr 2024 17:59:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://yochidros.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://yochidros.github.io/about/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0900</pubDate>
+      <guid>https://yochidros.github.io/about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://yochidros.github.io/images/about/job2.png&#34; alt=&#34;job&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;me&#34;&gt;Me&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2018-03 Computer Science Batcher, Aizu University&lt;/li&gt;&#xA;&lt;li&gt;2017-12 Software Engineer. Nagisa Inc.&lt;/li&gt;&#xA;&lt;li&gt;2019-09 Software Engineer. Tribe Inc.&lt;/li&gt;&#xA;&lt;li&gt;2020-04 dely Inc.&lt;/li&gt;&#xA;&lt;li&gt;2024-01 bitkey Inc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;social&#34;&gt;Social&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yochidros&#34;&gt;github&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; (&lt;a href=&#34;https://x.com/yochidros&#34;&gt;https://x.com/yochidros&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://bsky.app/profile/yochidros.bsky.social&#34;&gt;Bluesky&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://zenn.dev/yochidros&#34;&gt;zenn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;activities&#34;&gt;Activities&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TwemojiKit &lt;a href=&#34;https://github.com/yochidros/TwemojiKit&#34;&gt;link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;gen-thumbnail &lt;a href=&#34;https://github.com/yochidros/generate-thumbnails&#34;&gt;link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;skils&#34;&gt;Skils&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;iOS, Swift, SwiftUI. 8 years.&lt;/li&gt;&#xA;&lt;li&gt;Android, Kotlin. 5 years.&lt;/li&gt;&#xA;&lt;li&gt;Ruby, Ruby on Rails. 3 years.&lt;/li&gt;&#xA;&lt;li&gt;Vue, React, Typescript. 7 years.&lt;/li&gt;&#xA;&lt;li&gt;Go. 2 years.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;hobby&#34;&gt;Hobby&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;li&gt;Rust&lt;/li&gt;&#xA;&lt;li&gt;Haskell&lt;/li&gt;&#xA;&lt;li&gt;gleam&lt;/li&gt;&#xA;&lt;li&gt;c&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;interest&#34;&gt;Interest&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Embedded Systems&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Embedded Swift&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;OS, Networking&lt;/li&gt;&#xA;&lt;li&gt;Functional Programming&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Rust Nes</title>
       <link>https://yochidros.github.io/posts/rust-nes/</link>
@@ -29,13 +36,6 @@
       <pubDate>Fri, 29 Mar 2024 21:36:37 +0900</pubDate>
       <guid>https://yochidros.github.io/posts/gleam-begin/</guid>
       <description>gleamというプログラミング言語が1.0.0をリリースしたことを知り、興味がわいたので触ってみた</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://yochidros.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0900</pubDate>
-      <guid>https://yochidros.github.io/about/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://yochidros.github.io/images/about/job2.png&#34; alt=&#34;job&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;me&#34;&gt;Me&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2014-04 - 2018-03 会津大学コンピュータ理工学科&lt;/li&gt;&#xA;&lt;li&gt;2017-12 - 2019-08 株式会社Nagisa(ソフトウェアエンジニア: iOS, Android, Typesciprt, Vue.js2)&lt;/li&gt;&#xA;&lt;li&gt;2019-09 - 2020-03 株式会社Tribe(ソフトウェアエンジニア: iOS, Android, Go, Typescript)&lt;/li&gt;&#xA;&lt;li&gt;2020-04 - 2023-12 dely株式会社(ソフトウェアエンジニア: iOS, Android, RubyOnRails)&lt;/li&gt;&#xA;&lt;li&gt;2024-01 - 株式会社bitkey(ソフトウェアエンジニア: iOS, Android, Typescript)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;social&#34;&gt;Social&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yochidros&#34;&gt;github&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://twitter.com/yochidros&#34;&gt;twitter&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;activities&#34;&gt;Activities&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TwemojiKit &lt;a href=&#34;https://github.com/yochidros/TwemojiKit&#34;&gt;link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;gen-thumbnail &lt;a href=&#34;https://github.com/yochidros/generate-thumbnails&#34;&gt;link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;skils&#34;&gt;Skils&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;iOS, Swift, SwiftUI&lt;/li&gt;&#xA;&lt;li&gt;Android, Kotlin&lt;/li&gt;&#xA;&lt;li&gt;Ruby, Ruby on Rails&lt;/li&gt;&#xA;&lt;li&gt;Vue, React, Typescript&lt;/li&gt;&#xA;&lt;li&gt;Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;hobby&#34;&gt;Hobby&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;li&gt;Rust&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;interest&#34;&gt;Interest&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;JetpackCompose&lt;/li&gt;&#xA;&lt;li&gt;gleam&lt;/li&gt;&#xA;&lt;li&gt;Haskell&lt;/li&gt;&#xA;&lt;li&gt;Functional Programming&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>SwiftUIについて書きました</title>
